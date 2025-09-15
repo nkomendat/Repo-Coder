@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+  <img src="img/Logo.png" alt="Logo" width="250" class="mb-4">
+  <div class="card shadow login-card">
+    <div class="card-body">
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Usuario</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="checkMe">
+          <label class="form-check-label" for="checkMe">Recordarme</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-50 d-block mx-auto">Ingresar</button>
+      </form>
+    </div>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

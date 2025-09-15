@@ -1,91 +1,151 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css"> <!-- Enlace a la hoja de estilos CSS -->
-    <title>Home</title> <!-- Título de la pestaña del navegador -->
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> <!-- Fuente "Titillium Web" desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <header> <!-- Encabezado principal -->
-        <img src="img/Logo.png" alt="Logo"> <!-- Logo de la empresa -->
-        <nav>
-            <ul class="menu"> <!-- Lista principal de navegación -->
-                <li>Home</li>
-                <li>Favoritos</li>
-                <li>
-                    Clientes
-                    <ul class="submenu"> <!-- Submenú Clientes -->
-                        <li>Informacion</li>
-                        <li>Tenencias Especies</li>
-                        <li>Saldos Monetarios</li>
-                        <li>Rendimiento Cartera</li>
-                        <li>Ganancia Realizada</li>
-                        <li>Ganancia No Realizada</li>
-                        <li>Detalle Operaciones</li>
-                    </ul>
-                </li>
-                <li>Management
-                    <ul class="submenu"> <!-- Submenú Management -->
-                        <li>AUMs</li>
-                        <li>Brokerage</li>
-                        <li>Facturacion</li>
-                        <li>Volumen Operado</li>
-                    </ul>
-                </li>
-                <li>
-                    Mercado
-                    <ul class="submenu"> <!-- Submenú Mercado -->
-                        <li>Renta Fija</li>
-                        <li>Renta Variable</li>
-                        <li>Renta Mixta</li>
-                        <li>Fondos Comunes de Inversion</li>
-                        <li>Alternativos</li>
-                        <li>Calendario de Vencimientos</li>
-                    </ul>
-                </li>
-                <li>informes
-                    <ul class="submenu"> <!-- Submenú Informes -->
-                        <li>Centro de informes</li>
-                        <li>Generador de informes</li>
-                    </ul>
-                </li>
-                <li>Noticias
-                    <ul class="submenu"> <!-- Submenú Noticias -->
-                        <li>DDV</li>
-                        <li>RMG</li>
-                    </ul>
-                </li>
-                <li>Soporte
-                    <ul class="submenu"> <!-- Submenú Soporte -->
-                        <li>Solicitudes</li>
-                        <li>JIRA</li>
-                    </ul>
-                </li>
+    <header>
+    <nav class="navbar navbar-expand-lg color-logo navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="img/Logo.png" alt="Logo" width="250">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+            <a class="nav-link text-white fw-bold" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white fw-bold" aria-current="page" href="#">Favoritos</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Clientes
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">Informacion</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Tenencias Especies</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Rendimiento Cartera</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Ganancia Realizada</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Ganancia No Realizada</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Detalle Operaciones</a></li>
             </ul>
-        </nav>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Management
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">AUMs</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Brokerage</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Facturacion</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Volumen Operado</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mercado
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Fija</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Variable</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Mixta</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Fondos Comunes de Inversion</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Alternativos</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Calendario de Vencimientos</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                informes
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">Centro de informes</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">Generador de informes</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Noticias
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">DDV</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">RMG</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Soporte
+            </a>
+            <ul class="dropdown-menu color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">Solicitudes</a></li>
+                <li><a class="dropdown-item fw-bold text-white" href="#">JIRA</a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+                alt="Avatar" width="35" height="35" style="border-radius: 50%;">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end color-logo">
+                <li><a class="dropdown-item fw-bold text-white" href="#">Cerrar Sesión</a></li>
+            </ul>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
     </header>
-    <main> 
+    <main class="index"> 
         <h1>
             Hola, Usuario <!-- Saludo al usuario que cambia segun quien inicie sesion -->
         </h1>
-        <h2> 
-            Ingrese Número de Cuenta
-        </h2>
+        <div class="d-flex flex-column align-items-start p-1">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 fw-bold" type="search" placeholder="Ingrese N° de Cuenta" aria-label="Search"/>
+                <button class="btn btn-secondary color-logo text-white" type="submit">Buscar</button>
+            </form>
+        </div>
         <p>Rendimiento YTD</p>
         <img src="img/Assets.png" alt="Assets"> <!-- Tabla con resumen -->
-        <p>Distribucion por Especie</p> 
-        <img src="img/grafico_1.png" alt="grafico_1"> <!-- Tabla con resumen -->
-        <p>Volumen Operado por Cliente</p>
-        <img src="img/grafico_2.png" alt="grafico_2"> <!-- Tabla con resumen -->
-        <p>Altas de Clientes</p>
-        <img src="img/grafico_3.png" alt="grafico_3"> <!-- Tabla con resumen -->
+        <section>
+            <div class="Resumenes">
+            <p>Distribucion por Especie</p>
+                <div class="img">
+                    <img src="img/grafico_1.png" alt="grafico_1"> <!-- Tabla con resumen -->
+                </div>
+            </div>
+            <div class="Resumenes">
+            <p>Volumen Operado por Cliente</p>
+                <div class="img">
+                    <img src="img/grafico_2.png" alt="grafico_1"> <!-- Tabla con resumen -->
+                </div>
+            </div>
+            <div class="Resumenes">
+            <p>Altas de Clientes</p>
+                <div class="img">
+                    <img src="img/grafico_3.png" alt="grafico_1"> <!-- Tabla con resumen -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Ultima Actualizacion: 14/08/2025 12:00:00</p> <!-- Fecha de actualización -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

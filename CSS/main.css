@@ -1,71 +1,82 @@
 body {
-    font-family: "Titillium Web", sans-serif; /* Define la fuente del texto en todo el body */
-    margin: 5px;
+    background-color: #002E61;
+    font-family: "Titillium Web", sans-serif;
+    padding-top: 100px;
+}
+.color-logo{
     background-color: #002E61;
 }
-header {
-    text-align: center; /* Centra verticalmente los elementos dentro del header */
+.dropdown-item:hover {
+  background-color: #014488 !important;
+  color: white !important;
 }
-header img {
-    height: 90px; /* Establece la altura de la imagen del logo en 90 píxeles */
+.navbar-toggler {
+  border-color: white !important;
 }
-nav {
-    text-align: left; /* Alinea el texto del menú hacia la izquierda */
-    display: flex; /* Usa Flexbox para organizar el contenido del nav */
-}
-.menu {
-    list-style: none; 
-    background-color: #86a9d0;
-}
-.menu > li {
-    font-weight: bold;
-}
-.menu li {
-    list-style: none;
-}
-.submenu {
-    background-color: #aebbc9;
-    font-weight: normal;
-}
-.submenu-2 {
-    background-color: whitesmoke;
-    font-weight: normal;
-    font-style: italic;
-}
-main {
+main.index {
     max-width: 100%; /* Asegura que el main no se desborde */
-    background-color: white; /* Define el color de fondo del cuerpo de la página */
+    background-color: #263238; /* Color de fondo del cuerpo de la página */
 }
-main img {
+main.index img {
     max-width: 100%; /* Nunca más grande que su contenedor */
     display: block;
     margin: 0 auto;
 }
-main h1{
-    color: #002E61;
-    margin: 20px;
+main.index h1{
+    color: #F5FAFF;
+    margin-left: 20px
 }
-main h2{
-    color: black;
-    margin: 20px;
-    font-size: 0.8em;
-}
-main p{
-    color: #002E61;
+main.index p{
+    color: #F5FAFF;
     margin: 20px;
     font-weight: bold;
     text-align: center;
     font-size: 1.5em;
 }
-.Opciones {
-    font-weight: normal;
-    list-style: none;  
+section {
+    background-color: #002E61;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
 }
-.Carga_JIRA {
-    color: black; 
-    margin: 20px;
-    font-weight: bold;
-    font-size: 1em;
+section .Resumenes {
+    flex: 1 1 30%;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center; 
+}
+/* Títulos centrados */
+section .Resumenes p {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 15px;
+  white-space: nowrap; /* evita que se parta el título en varias líneas */
+}
+/* Imágenes centradas */
+section .Resumenes .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .Resumenes .img img {
+    max-width: 100%;
+    height: auto;
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center; /* centra los bloques verticalmente */
+    }
+
+    section .Resumenes {
+        flex: 1 1 100%; /* cada bloque ocupa todo el ancho */
+        max-width: 100%; /* evita que se estiren más de lo necesario */
+    }
 }
 .Texto_Adjunto {
     color: black; 
@@ -79,6 +90,30 @@ footer {
     font-style: italic;
     margin: 20px;
 }
-.JIRA {
+main.JIRA {
     text-align: center; 
+    background-color: #263238;
+    padding: 50px;
+}
+main.JIRA h1 {
+    color: #F5FAFF; 
+    text-align: center; 
+    font-weight: bold;
+    margin: 20px;
+}
+.form-label-JIRA {
+    color: #F5FAFF !important;
+}
+.mb-3 { 
+    text-align: left !important; 
+}
+.Carga_JIRA{
+    color: #F5FAFF;
+    text-align: left;
+}
+.login-card {
+      width: 100%;
+      max-width: 300px;
+      border: 0;
+      border-radius: 12px;
 }
