@@ -1,0 +1,84 @@
+body {
+    font-family: "Titillium Web", sans-serif; /* Define la fuente del texto en todo el body */
+    margin: 5px;
+    background-color: #002E61;
+}
+header {
+    text-align: center; /* Centra verticalmente los elementos dentro del header */
+}
+header img {
+    height: 90px; /* Establece la altura de la imagen del logo en 90 píxeles */
+}
+nav {
+    text-align: left; /* Alinea el texto del menú hacia la izquierda */
+    display: flex; /* Usa Flexbox para organizar el contenido del nav */
+}
+.menu {
+    list-style: none; 
+    background-color: #86a9d0;
+}
+.menu > li {
+    font-weight: bold;
+}
+.menu li {
+    list-style: none;
+}
+.submenu {
+    background-color: #aebbc9;
+    font-weight: normal;
+}
+.submenu-2 {
+    background-color: whitesmoke;
+    font-weight: normal;
+    font-style: italic;
+}
+main {
+    max-width: 100%; /* Asegura que el main no se desborde */
+    background-color: white; /* Define el color de fondo del cuerpo de la página */
+}
+main img {
+    max-width: 100%; /* Nunca más grande que su contenedor */
+    display: block;
+    margin: 0 auto;
+}
+main h1{
+    color: #002E61;
+    margin: 20px;
+}
+main h2{
+    color: black;
+    margin: 20px;
+    font-size: 0.8em;
+}
+main p{
+    color: #002E61;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+}
+.Opciones {
+    font-weight: normal;
+    list-style: none;  
+}
+.Carga_JIRA {
+    color: black; 
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.Texto_Adjunto {
+    color: black; 
+    margin: 20px;
+    font-size: 0.8em;
+}
+footer {
+    color: #F5FAFF; 
+    text-align: right; 
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px;
+}
+.JIRA {
+    text-align: center; 
+}
