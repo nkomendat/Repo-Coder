@@ -15,7 +15,7 @@ body {
 }
 main.index {
     max-width: 100%; /* Asegura que el main no se desborde */
-    background-color: #263238; /* Color de fondo del cuerpo de la página */
+    background-color: #040810; /* Color de fondo del cuerpo de la página */
 }
 main.index img {
     max-width: 100%; /* Nunca más grande que su contenedor */
@@ -35,28 +35,33 @@ main.index h2{
 }
 section {
     background-color: #002E61;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px;   /* separación entre los bloques */
     padding: 20px;
 }
 section .Resumenes {
-    flex: 1 1 30%;
-    padding: 10px;
     color: white;
+    text-align: center;
+    padding: 10px;
     box-sizing: border-box;
-    text-align: center; 
 }
-/* Títulos centrados */
+section .Resumenes h3,
+section .Resumenes h4,
+section .Resumenes h5 {
+    font-size: 1.5em;   /* mismo tamaño para todos */
+    font-weight: bold;
+    color: #F5FAFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
 section .Resumenes p {
   font-weight: bold;
   font-size: 1.3em;
   text-align: center;
   margin-bottom: 15px;
-  white-space: nowrap; /* evita que se parta el título en varias líneas */
+  white-space: nowrap;
 }
-/* Imágenes centradas */
 section .Resumenes .img {
     display: flex;
     justify-content: center;
@@ -66,16 +71,15 @@ section .Resumenes .img img {
     max-width: 100%;
     height: auto;
 }
-/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     section {
         flex-direction: column;
-        align-items: center; /* centra los bloques verticalmente */
+        align-items: center;
     }
 
     section .Resumenes {
-        flex: 1 1 100%; /* cada bloque ocupa todo el ancho */
-        max-width: 100%; /* evita que se estiren más de lo necesario */
+        flex: 1 1 100%; 
+        max-width: 100%;
     }
 }
 .Texto_Adjunto {
