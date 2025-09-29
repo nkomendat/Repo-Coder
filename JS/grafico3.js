@@ -2,7 +2,7 @@ var chartDom3 = document.getElementById('main');
 var chart3 = echarts.init(chartDom3, 'dark');
 var option3 = {
     xAxis: {
-        data: ['OCTUBRE','NOVIEMBRE','DICIEMBRE','ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE']
+        data: ['10-2024','11-2024','12-2024','01-2025','02-2025','03-2025','04-2025','05-2025','06-2025','07-2025','08-2025','09-2025']
     },
     yAxis: {},
     series: [{

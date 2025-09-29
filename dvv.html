@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg color-logo navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo.png" alt="Logo" width="250">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-bold" aria-current="page" href="#">Favoritos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Clientes</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Informacion</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Tenencias Especies</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Rendimiento Cartera</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Ganancia Realizada</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Ganancia No Realizada</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Detalle Operaciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Management</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="#">AUMs</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Brokerage</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Facturacion</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Volumen Operado</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Mercado</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Fija</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Variable</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Renta Mixta</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Fondos Comunes de Inversion</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Alternativos</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Calendario de Vencimientos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Informes</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Centro de informes</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Generador de informes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Noticias</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="dvv.html">DDV</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="#">RMG</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Soporte</a>
+                            <ul class="dropdown-menu color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="#">Solicitudes</a></li>
+                                <li><a class="dropdown-item fw-bold text-white" href="jira.html">JIRA</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/default-avatar.png" alt="Avatar" width="35" height="35">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end color-logo">
+                                <li><a class="dropdown-item fw-bold text-white" href="login.html">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="Noticias DVV">
+    <div class="container">
+        <h1 class="text-center">Donde Vemos Valor</h1>
+        <div class="linea-separadora"></div>
+    </div>
+        <section class="container my-5 fondo-noticias">
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="zoom-in-right">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 1.jpg" alt="Noticia 1">
+                        <h2>DVV | Navegando la incertidumbre</h2>
+                        <p>Desde principios de julio, en la antesala del fin de las LEFIs, el mercado —y en particular
+                            la curva de pesos— parece no encontrar un equilibrio. Hemos visto un marcado incremento
+                            tanto en la volatilidad</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-left">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 2.jpg" alt="Noticia 2">
+                        <h2>DVV | Un mismo interrogante, distintas salidas</h2>
+                        <p>Si bien el acuerdo con el FMI fortaleció transitoriamente las reservas del Banco Central, la
+                            acumulación no avanza según las metas estipuladas. Esto refleja que la actual administración
+                            continúa priorizando la estrategia de desinflación de</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-right">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 3.jpg" alt="Noticia 3">
+                        <h2>DVV | Entre el ancla monetaria y las olas electorales</h2>
+                        <p>• Nuevo régimen, nuevas reglas: Flotación con bandas y nueva ancla monetaria cambian el juego; la tasa se vuelve endógena y el carry toma protagonismo. • La curva habla: El tramo medio-largo a tasa fija</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-left">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 4.jpg" alt="Noticia 4">
+                        <h2>DVV | Inversiones Globales: “El nuevo (des)orden mundial comanda la estrategia”</h2> 
+                        <p>En Criteria se llevó a cabo el habitual Comité Global de Inversiones, nuestra reunión trimestral tendiente a analizar las estrategias de inversión, y diseñar los portafolios internacionales. El año inició marcado por una elevada incertidumbre</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-right">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 5.jpg" alt="Noticia 5">
+                        <h2>DVV | “El Acuerdo de Mar-a-Lago”</h2>
+                        <p>1. Introducción El anuncio realizado por Donald Trump el pasado 2 de abril, denominado “Día de la Liberación”, marcó un nuevo punto de inflexión en el clima político y económico de Estados Unidos y el</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-left">
+                    <div class="Noticias">
+                        <img src="img/Imagen DDV 6.jpg" alt="Noticia 6">
+                        <h2>DVV | ¿Qué bonos lucen más atractivos?</h2>
+                        <p>Finaliza el primer trimestre de 2025, y el Gobierno de Javier Milei refuerza su compromiso con el ejercicio de la buena disciplina fiscal, ancla del programa económico y el verdadero núcleo de su política de</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
