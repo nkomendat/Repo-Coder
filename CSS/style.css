@@ -12,6 +12,10 @@ body {
   background-color: #040810;
 }
 
+.bg-gris, section .Noticias fondo-noticias {
+  background-color: #263238;
+}
+
 .bg-claro, section .Noticias {
   background-color: #f9f9f9;
 }

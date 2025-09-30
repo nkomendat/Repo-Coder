@@ -52,6 +52,10 @@ section {
         justify-content: flex-start;
         height: 100%;
 
+        fondo-noticias {
+        @extend .bg-gris;
+        }
+
         h2 {
             text-align: center;
             margin-bottom: 1rem;
