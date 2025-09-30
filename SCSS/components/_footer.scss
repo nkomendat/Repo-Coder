@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+footer {
+  @extend .bg-gris;
+  color: $color-texto;
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px;
+}

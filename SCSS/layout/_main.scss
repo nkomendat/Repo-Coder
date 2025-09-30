@@ -1,0 +1,50 @@
+@use '../utils/backgrounds' as *;
+@use '../base/variables' as *;
+main {
+    &.index {
+        max-width: 100%;
+        @extend .bg-oscuro;
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: $color-texto;
+            margin-left: 20px;
+        }
+
+        h2 {
+            color: $color-texto;
+            margin: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+
+    &.JIRA {
+        text-align: center;
+        background-color: $color-secundario;
+        padding: 50px;
+
+        h1 {
+            color: $color-texto;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px;
+        }
+    }
+
+    &.Noticias.DVV {
+        padding-top: 5rem;
+        background-color: $color-secundario;
+
+        h1 {
+            text-align: center;
+            color: $color-texto;
+        }
+    }
+}

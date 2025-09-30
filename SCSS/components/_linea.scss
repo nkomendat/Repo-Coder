@@ -1,0 +1,9 @@
+@use '../base/variables' as *;
+.linea-separadora {
+    width: 100%;
+    max-width: 100%;
+    height: 2px;
+    background-color: $color-blanco;
+    margin: 5rem auto 5rem;
+    opacity: 1;
+}

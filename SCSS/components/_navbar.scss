@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+.color-logo {
+    background-color: $color-principal;
+}
+
+.navbar-toggler {
+    border-color: $color-blanco !important;
+}
+
+.dropdown-item:hover {
+    background-color: $color-hover !important;
+    color: $color-blanco !important;
+}

@@ -1,0 +1,18 @@
+$background-colors: (
+  azul: #002E61,
+  oscuro: #040810,
+  gris: #263238,
+  claro: #f9f9f9,
+  negro: #000000,
+  blanco: #ffffff
+);
+
+@each $nombre, $color in $background-colors {
+  .bg-#{$nombre} {
+    background-color: $color;
+  }
+}
+
+@mixin bg($color-name) {
+  background-color: map-get($background-colors, $color-name);
+}

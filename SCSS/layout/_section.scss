@@ -1,0 +1,74 @@
+@use '../utils/backgrounds' as *;
+@use '../base/variables' as *;
+section {
+    @include bg(azul);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+
+    .Resumenes {
+        color: $color-blanco;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+
+        h3, h4, h5 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $color-texto;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 15px;
+            white-space: nowrap;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .grafico1 {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .Noticias {
+        @extend .bg-claro;
+        border-radius: 8px;
+        padding: 1rem;
+        color: $color-principal;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: left;
+            line-height: 1.6;
+            margin-top: auto;
+        }
+    }
+}
