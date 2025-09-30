@@ -1,6 +1,5 @@
 @use '../base/variables' as *;
 footer {
-  @extend .bg-gris;
   color: $color-texto;
   text-align: right;
   font-weight: bold;
