@@ -224,4 +224,15 @@ footer {
   animation: zoomInDownCustom 0.8s ease-out;
 }
 
+#grafico1,
+#grafico2,
+#grafico3,
+#tablaVolumen,
+#main {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
