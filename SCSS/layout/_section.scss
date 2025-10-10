@@ -7,7 +7,7 @@ section {
     gap: 30px;
     padding: 20px;
 
-    .Resumenes {
+    .resumenes {
         color: $color-blanco;
         text-align: center;
         padding: 10px;
@@ -41,7 +41,7 @@ section {
         }
     }
 
-    .Noticias {
+    .noticias {
         @extend .bg-claro;
         border-radius: 8px;
         padding: 1rem;

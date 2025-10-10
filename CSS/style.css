@@ -12,11 +12,11 @@ body {
   background-color: #040810;
 }
 
-.bg-gris, section .Noticias fondo-noticias {
+.bg-gris, section .noticias fondo-noticias {
   background-color: #263238;
 }
 
-.bg-claro, section .Noticias {
+.bg-claro, section .noticias {
   background-color: #f9f9f9;
 }
 
@@ -47,22 +47,22 @@ main.index h2 {
   text-align: center;
   font-size: 1.5em;
 }
-main.JIRA {
+main.jira {
   text-align: center;
   background-color: #263238;
   padding: 50px;
 }
-main.JIRA h1 {
+main.jira h1 {
   color: #F5FAFF;
   text-align: center;
   font-weight: bold;
   margin: 20px;
 }
-main.Noticias.DVV {
+main.noticias.dvv {
   padding-top: 5rem;
   background-color: #263238;
 }
-main.Noticias.DVV h1 {
+main.noticias.dvv h1 {
   text-align: center;
   color: #F5FAFF;
 }
@@ -74,36 +74,36 @@ section {
   gap: 30px;
   padding: 20px;
 }
-section .Resumenes {
+section .resumenes {
   color: #ffffff;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
 }
-section .Resumenes h3, section .Resumenes h4, section .Resumenes h5 {
+section .resumenes h3, section .resumenes h4, section .resumenes h5 {
   font-size: 1.5em;
   font-weight: bold;
   color: #F5FAFF;
   text-align: center;
   margin-bottom: 15px;
 }
-section .Resumenes p {
+section .resumenes p {
   font-weight: bold;
   font-size: 1.3em;
   text-align: center;
   margin-bottom: 15px;
   white-space: nowrap;
 }
-section .Resumenes .img {
+section .resumenes .img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .Resumenes .img .grafico1 {
+section .resumenes .img .grafico1 {
   max-width: 100%;
   height: auto;
 }
-section .Noticias {
+section .noticias {
   border-radius: 8px;
   padding: 1rem;
   color: #002E61;
@@ -113,18 +113,18 @@ section .Noticias {
   justify-content: flex-start;
   height: 100%;
 }
-section .Noticias h2 {
+section .noticias h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
-section .Noticias img {
+section .noticias img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-section .Noticias p {
+section .noticias p {
   text-align: left;
   line-height: 1.6;
   margin-top: auto;
@@ -152,7 +152,7 @@ section .Noticias p {
   opacity: 1;
 }
 
-.form-label-JIRA {
+.form-label-jira {
   color: #F5FAFF !important;
 }
 
@@ -160,7 +160,7 @@ section .Noticias p {
   text-align: left !important;
 }
 
-.Carga_JIRA {
+.carga_jira {
   color: #F5FAFF;
   text-align: left;
 }
@@ -185,7 +185,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  section .Resumenes {
+  section .resumenes {
     flex: 1 1 100%;
     max-width: 100%;
   }
@@ -227,7 +227,7 @@ footer {
 #grafico1,
 #grafico2,
 #grafico3,
-#tablaVolumen,
+#tablavolumen,
 #main {
   width: 100%;
   max-width: 100%;
